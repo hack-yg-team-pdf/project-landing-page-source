@@ -15,6 +15,11 @@ page '/*.txt', layout: false
 
 activate :livereload
 
+activate :gh_pages do |gh_pages|
+  gh_pages.remote = 'git@github.com:hack-yg-team-pdf/hack-yg-team-pdf.github.io.git'
+  gh_pages.branch = 'master'
+end
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
